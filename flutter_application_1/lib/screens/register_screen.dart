@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/screens/setup_screen_1.dart';
+import 'package:flutter_application_1/screens/setup_screen_1.dart';
 import '../core/app_colors.dart';
 import '../widgets/custom_text_field.dart';
 
