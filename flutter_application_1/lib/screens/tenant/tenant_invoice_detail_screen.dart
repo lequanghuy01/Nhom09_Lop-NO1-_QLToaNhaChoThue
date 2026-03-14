@@ -88,7 +88,7 @@ class TenantInvoiceDetailScreen
                   const SizedBox(height: 8),
                   _buildBankInfoRow(
                     'Chủ tài khoản:',
-                    'LÊ QUANG HUY',
+                    'Nguyen Van A',
                   ),
                   const SizedBox(height: 8),
                   _buildBankInfoRow(

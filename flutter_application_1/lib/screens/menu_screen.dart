@@ -331,7 +331,7 @@ class MenuScreen extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  _buildMenuItem(
+                  /*_buildMenuItem(
                     icon: Icons
                         .admin_panel_settings_outlined,
                     title:
@@ -339,7 +339,7 @@ class MenuScreen extends StatelessWidget {
                     iconColor:
                         AppColors.textSecondary,
                     onTap: () {},
-                  ),
+                  ),*/
                   _buildDivider(),
                   _buildMenuItem(
                     icon: Icons.bar_chart,

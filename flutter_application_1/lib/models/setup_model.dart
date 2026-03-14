@@ -86,7 +86,7 @@ class SetupData {
   // --- KHO LƯU TRỮ HÓA ĐƠN (Mô phỏng Firebase) ---
   // --- KHO LƯU TRỮ HÓA ĐƠN (Dạng Map tương thích 100% với màn hình cũ) ---
   List<Map<String, dynamic>> invoices = [
-    {
+    /*{
       'id': 'INV-10-01',
       'room': 'Tổng hợp thu',
       'month': 10,
@@ -162,7 +162,7 @@ class SetupData {
       'electricityCost': 0,
       'waterCost': 0,
       'otherCost': 0,
-    },
+    },*/
   ];
 
   // --- THÔNG TIN TÒA NHÀ MỞ RỘNG (ĐÃ NÂNG CẤP) ---
