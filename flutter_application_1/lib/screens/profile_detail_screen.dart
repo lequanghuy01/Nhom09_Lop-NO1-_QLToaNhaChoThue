@@ -32,7 +32,7 @@ class _ProfileDetailScreenState
     super.initState();
     // Bơm dữ liệu cá nhân hiện tại vào các ô nhập
     _nameCtrl.text = appData.owner.isEmpty
-        ? 'Lê Quang Huy'
+        ? 'Nguyen Van A'
         : appData.owner;
     _phoneCtrl.text = appData.hotline;
     _emailCtrl.text = appData.supportEmail;

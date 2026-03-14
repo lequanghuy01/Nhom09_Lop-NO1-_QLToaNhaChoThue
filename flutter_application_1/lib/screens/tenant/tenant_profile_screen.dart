@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../core/app_colors.dart';
 
 // --- IMPORT CÁC MÀN HÌNH ĐÃ LÀM TỪ TRƯỚC (TÁI SỬ DỤNG) ---
+import '../profile_detail_screen.dart'; // Màn hình chi tiết thông tin đã làm
 import '../ekyc_screen.dart';
 import '../change_password_screen.dart';
 import '../notification_settings_screen.dart';
@@ -159,7 +160,14 @@ class TenantProfileScreen
                   iconColor: Colors.blueAccent,
                   title: 'Thông tin chi tiết',
                   onTap: () {
-                    /* Chuyển đến màn sửa thông tin */
+                    // --- ĐÃ THÊM LỆNH CHUYỂN TRANG VÀO ĐÂY ---
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const ProfileDetailScreen(),
+                      ),
+                    );
                   },
                 ),
                 _buildMenuItem(
