@@ -3,6 +3,7 @@ import '../core/app_colors.dart';
 import 'register_screen.dart';
 import 'main_screen.dart';
 import 'tenant/tenant_main_screen.dart';
+import 'forgot_password_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -118,7 +119,7 @@ class _LoginScreenState
                 ),
                 const SizedBox(height: 16),
                 const Text(
-                  'QUẢN LÝ TÒA NHÀ',
+                  'QUẢN LÝ KHU TRỌ',
                   style: TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 24,
@@ -340,7 +341,15 @@ class _LoginScreenState
                         alignment:
                             Alignment.centerRight,
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    ForgotPasswordScreen(),
+                              ),
+                            );
+                          },
                           child: const Text(
                             'Quên mật khẩu?',
                             style: TextStyle(
