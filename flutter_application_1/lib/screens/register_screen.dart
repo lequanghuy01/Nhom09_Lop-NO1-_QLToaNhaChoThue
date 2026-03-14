@@ -53,7 +53,7 @@ class _RegisterScreenState
 
                 // Tiêu đề
                 const Text(
-                  'Quản Lý Tòa Nhà',
+                  'Quản Lý Khu Trọ',
                   style: TextStyle(
                     color: AppColors.textPrimary,
                     fontSize: 24,

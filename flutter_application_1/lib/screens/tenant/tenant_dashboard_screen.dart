@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../core/app_colors.dart';
+import 'tenant_notification_screen.dart';
 
 class TenantDashboardScreen
     extends StatefulWidget {
@@ -74,10 +75,47 @@ class _TenantDashboardScreenState
                       ),
                     ],
                   ),
-                  const Icon(
-                    Icons.notifications_none,
-                    color: Colors.white,
-                    size: 28,
+                  GestureDetector(
+                    onTap: () {
+                      // Chuyển sang màn hình thông báo dành riêng cho Khách thuê
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              const TenantNotificationScreen(),
+                        ),
+                      );
+                    },
+                    child: Stack(
+                      children: [
+                        const Icon(
+                          Icons
+                              .notifications_none,
+                          color: Colors.white,
+                          size: 28,
+                        ),
+                        // Chấm đỏ thông báo
+                        Positioned(
+                          right: 2,
+                          top: 2,
+                          child: Container(
+                            width: 10,
+                            height: 10,
+                            decoration: BoxDecoration(
+                              color: Colors
+                                  .redAccent,
+                              shape:
+                                  BoxShape.circle,
+                              border: Border.all(
+                                color: AppColors
+                                    .background,
+                                width: 1.5,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),

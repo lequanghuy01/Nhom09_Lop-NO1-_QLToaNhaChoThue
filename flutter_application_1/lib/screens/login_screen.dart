@@ -127,7 +127,7 @@ class _LoginScreenState
                   ),
                 ),
                 const Text(
-                  'BUILDING MANAGEMENT SYSTEM',
+                  'APARTMENT MANAGEMENT SYSTEM',
                   style: TextStyle(
                     color:
                         AppColors.textSecondary,
